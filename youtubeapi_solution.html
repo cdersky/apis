@@ -14,7 +14,7 @@
  <body>
 
 <div class="container">
- 
+
  <div class="row">
    <div class="span12">
     <h2 class="page-header">Best Videos Ever ❤
@@ -34,7 +34,7 @@
     </h2>
    </div>
  </div>
- 
+
  <div class="row">
    <div class="span3">
      <ul id="videos-list">
@@ -52,8 +52,8 @@
 </div>
 
 
-<script type="text/javascript" src="lib/youtube.js"></script>
-<script type="text/javascript" src="lib/jquery.min.js"></script>
+<script type="text/javascript" src="https://jtcoders.github.io/apis/lib/youtube.js"></script>
+<script type="text/javascript" src="https://jtcoders.github.io/apis/lib/jquery.min.js"></script>
  <script>
 
  function addVideoToList(video) {
@@ -64,7 +64,7 @@
     var thumbnailImg = $('<img>');
     thumbnailImg.attr('src', video.snippet.thumbnails.default.url);
     videoLink.append(thumbnailImg);
-    
+
     videoLink.on('click', function(e) {
         e.preventDefault();
         var videoTitle = $('<h2>');
@@ -90,13 +90,13 @@
     videoItem.append(videoLink);
     $('#videos-list').append(videoItem);
  }
-   
+
 var apiKey = "AIzaSyCRXTR0G_Slvgyjj_Vgfry6KLiw8pIMlHs";
 
 $.ajax({
   url: "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=otters&safeSearch=moderate&type=video&videoEmbeddable=true&fields=items(id%2Csnippet)&key=" + apiKey,
   dataType: "json",
-  success: function(json) { 
+  success: function(json) {
     var videos = json.items;
     for (var i = 0; i < videos.length; i++) {
       addVideoToList(videos[i]);
