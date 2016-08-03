@@ -3,7 +3,13 @@
  <head>
   <meta charset="utf-8">
   <title>Video Watcher</title>
-  <link rel="stylesheet" type="text/css" href="http://teaching-materials.org/ajax/lib/bootstrap.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <style type="text/css">
+  /* This puts titles always on a separate line from thumbnails */
+  #videos-list img {
+    display: block;
+  }
+  </style>
  </head>
  <body>
 
@@ -32,8 +38,8 @@
 
 
 
- <script type="text/javascript" src="http://teaching-materials.org/ajax/lib/youtube.js"></script>
- <script type="text/javascript" src="http://teaching-materials.org/ajax/lib/jquery.min.js"></script>
+ <script type="text/javascript" src="lib/youtube.js"></script>
+ <script type="text/javascript" src="lib/jquery.min.js"></script>
  <script>
 
  function addVideoToList(video) {
