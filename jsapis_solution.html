@@ -14,7 +14,7 @@
  <body>
 
 <div class="container">
- 
+
  <div class="row">
    <div class="span12">
     <h2 class="page-header">Best Videos Ever ❤
@@ -34,7 +34,7 @@
     </h2>
    </div>
  </div>
- 
+
  <div class="row">
    <div class="span3">
      <ul id="videos-list">
@@ -53,8 +53,8 @@
 
 
 
-<script type="text/javascript" src="lib/youtube.js"></script>
-<script type="text/javascript" src="lib/jquery.min.js"></script>
+<script type="text/javascript" src="https://jtcoders.github.io/apis/lib/youtube.js"></script>
+<script type="text/javascript" src="https://jtcoders.github.io/apis/lib/jquery.min.js"></script>
  <script>
 
  function addVideoToList(video) {
@@ -65,7 +65,7 @@
     var thumbnailImg = $('<img>');
     thumbnailImg.attr('src', thumbnailUrl);
     videoLink.append(thumbnailImg);
-    
+
     videoLink.on('click', function(e) {
         e.preventDefault();
         var videoTitle = $('<h2>');
@@ -92,7 +92,7 @@
     $('#videos-list').append(videoItem);
  }
 
-var videos = [                                                                                                                                                                     
+var videos = [
   {"youtubeId": "TddFnTB_7IM",
     "title": "Trip through the 80s",
     "author": "meliberty"
@@ -113,7 +113,7 @@ var videos = [
 
 for (var i = 0; i < videos.length; i++) {
    addVideoToList(videos[i]);
-} 
+}
 
  </script>
  </body>
