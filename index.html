@@ -538,64 +538,6 @@ fetchPhotos('rabbits');</code></pre>
             </section>
 
 
-            <section>
-                <h2>Text Processing: WebPurify</h2>
-
-                <pre><code>function purify(text) {
-  var url = 'http://api1.webpurify.com/services/rest/';
-  var params = {
-    'api_key': '07efa9710a009bce7e2dbf01aa2cb12d',
-    'method': 'webpurify.live.replace',
-    'format': 'json',
-    'text': encodeURIComponent(text),
-    'replacesymbol': '*'
-  }
-
-  JSONP.get(url, params, null, function(json) {
-    $('#demo').html(json.rsp.text);
-  });
-}
-
-purify('Girl Develop It is the shit!');</code></pre>
-
-                <p>See also: <a href="http://www.webpurify.com/documentation/response/json.php" target=
-                "_blank">WebPurify JSON Docs</a></p>
-
-
-                <aside class="notes">
-                    Chris asked to be respectful, but since I'm not capable of doing that myself, I'll simply ask an
-                    API to censor me - the WebPurify API.
-                </aside>
-            </section>
-
-
-            <section>
-                <h2>Image Processing: Aviary</h2>
-
-                <pre><code>&lt;script type="text/javascript"&gt;
-var _featherLoaded = false;
-Feather_APIKey = '871670f82';
-Feather_Theme = 'bluesky';
-Feather_EditOptions = 'all';
-Feather_OpenType = 'float';
-Feather_CropSizes = '320x240,640x480,800x600,1280x1024';
-Feather_OnSave = function(id, url) {
-  var e = document.getElementById(id);
-  e.src = url;
-  aviaryeditor_close();
-}
-Feather_OnLoad = function() {
-  aviaryeditor('image', $('#image').attr('src'));
-  window.setTimeout(function() {$('#avpw_controls').css({position: 'fixed', 'z-index': '100000', 'left': '20px'});}, 20);
-}
-&lt;/script&gt;
-&lt;script src="http://feather.aviary.com/js/feather.js"&gt;&lt;/script&gt;
-&lt;img id="image" src="http://media.tumblr.com/tumblr_m6lz8rsqov1rqbtdh.jpg"&gt;</code></pre>
-
-                <p>See also: <a href="http://developers.aviary.com/feather-builder" target="_blank">Aviary Feather
-                API</a></p>
-            </section>
-
 
             <section>
                 <h2>Client-side APIs: Data</h2>
