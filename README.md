@@ -1,6 +1,6 @@
 # Working with APIs in JS
 
-Slides and materials are hosted [here](https://jtcoders.github.io/apis/).
+Slides and materials are hosted [here](https://cdersky.github.io/apis/).
 
 ## Course description
 
