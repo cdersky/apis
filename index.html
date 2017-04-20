@@ -279,7 +279,7 @@ apiNamespace.apiFunction();
 
 
 
-          <section>
+          <!-- <section>
             <h2>Facebook Like button</h2>
 
             <pre><code>&lt;div class="fb-like" data-href="http://gdisf-js-apis.appspot.com/"
@@ -300,10 +300,10 @@ apiNamespace.apiFunction();
             <p>More reading: <a href="http://developers.facebook.com/docs/reference/plugins/like/" target=
               "_blank">Facebook Like Button</a></p>
           </section>
+ -->
 
 
-
-            <section>
+           <!--  <section>
                 <h2>Google Analytics</h2>
 
                 <pre><code>&lt;button type="button"&gt;Click Me!&lt;/button&gt;
@@ -325,6 +325,23 @@ $('#demo button').bind('click', function() {
 
                 <p>More reading: <a href="https://developers.google.com/analytics/devguides/collection/gajs/" target=
                 "_blank">Google Analytics JS Docs</a></p>
+            </section>
+
+ -->
+            <section>
+                <h2>Pinterest</h2>
+                <pre><code>
+&lt;a href="https://www.pinterest.com/pin/create/button/"&gt;
+    &lt;img src="//assets.pinterest.com/images/pidgets/pinit_fg_en_rect_gray_20.png"&gt;
+&lt;/a&gt;
+  
+&lt;script
+    type="text/javascript"
+    async defer
+    src="//assets.pinterest.com/js/pinit.js"&gt;&lt;/script&gt;
+                </code></pre>
+                <p><a href="https://developers.pinterest.com/docs/widgets/save/?">Pinterest Button API Docs</a>  |  <a href="https://jsbin.com/lecone/edit?html,output">JSBin example</a></p>
+
             </section>
 
 
@@ -413,7 +430,7 @@ echo $callback . "({'name': 'Girl Develop It'});";
                 <h2>reddit JSONP API</h2>
 
 
-                <p>Example URL: <a href="http://www.reddit.com/search.json?q=girldevelopit" target=
+                <p>Example URL: <a href="https://www.reddit.com/search.json?q=girldevelopit" target=
                 "_blank">http://www.reddit.com/search.json?q=girldevelopit</a></p>
 
                 <pre><code>function onLoad(json) {
@@ -424,15 +441,14 @@ echo $callback . "({'name': 'Girl Develop It'});";
 
 function fetchJSON(query) {
   var script = document.createElement('script');
-  script.src = 'http://www.reddit.com/r/all/search.json?q='
+  script.src = 'https://www.reddit.com/search.json?q='
     + query + '&jsonp=onLoad';
   document.getElementsByTagName('body')[0].appendChild(script);
 }
 
 fetchJSON('girldevelopit');</code></pre>
 
-                <p><a href="http://www.reddit.com/dev/api#GET_search" target="_blank">Reddit API docs</a>
-                </p>
+                <p><a href="http://www.reddit.com/dev/api#GET_search" target="_blank">Reddit API docs</a> | <a href="https://jsbin.com/lawukuw/edit?html,output">JSBin example</a></p>
             </section>
 
 
@@ -460,7 +476,8 @@ fetchJSON('girldevelopit');</code></pre>
 fetchPhotos('rabbits');</code></pre>
 
                 <p>See also: <a href="http://api.jquery.com/jQuery.ajax/" target="_blank">jQuery .ajax()</a> | <a href=
-                "http://www.flickr.com/services/api/" target="_blank">Flickr API</a></p>
+                "http://www.flickr.com/services/api/" target="_blank">Flickr API</a> | 
+                <a href="https://jsbin.com/mewewumega/edit?html,console,output">JSBin example</a></p>
             </section>
 
 
@@ -472,7 +489,7 @@ fetchPhotos('rabbits');</code></pre>
             </section>
 
 
-            <section>
+           <!--  <section>
                 <h2>Facebook API</h2>
 
                 <pre><code>window.fbAsyncInit = function() {
@@ -497,8 +514,13 @@ fetchPhotos('rabbits');</code></pre>
                     Any APIs that use this crazy nested iframe hack will wrap it up in a client library so that mere
                     mortals like us can use it.
                 </aside>
-            </section>
+            </section> -->
 
+            <section>
+                <h2>Google Maps & US Geological Survery APIS</h2>
+                <h4>With an api key!</h4>
+                <p><a href="https://developers.google.com/maps/documentation/javascript/earthquakes#overview">Tutorial Link</a></p>
+            </section>
 
             <section>
                 <br>
