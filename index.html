@@ -29,7 +29,7 @@
                 <h3>How, What, &amp; Why</h3>
 
 
-                <p><a href="https://jtcoders.github.io/apis">https://jtcoders.github.io/apis</a>
+                <p><a href="https://jtcoders.github.io/apis">https://cdersky.github.io/apis</a>
                 </p>
             </section>
 
@@ -157,13 +157,31 @@ template=simple"&gt;
             </section>
 
 
+          <section>
+            <h2>What are query parameter?</h2>
+
+            <pre><code class="xml">
+&lt;img src="http://otherdomain.com/service?param=x&amp;otherparam=y"&gt;
+  </code></pre><br>
+
+
+            <h3>key - value pairs</h3>
+
+            <pre><code>
+              ?
+              param=x
+              &amp;
+              otherparam=y
+  </code></pre>
+          </section>
+
             <section>
                 <h2>IMG as API: Google Maps Image APIs</h2>
 
                 <pre><code>&lt;img src="
 http://maps.google.com/maps/api/staticmap?
-center=45.123664,-123.113775&
-zoom=18&
+center=48.8584,2.2945&
+zoom=16&
 maptype=satellite&
 size=250x300&
 sensor=false"&gt;</code></pre>
@@ -171,15 +189,15 @@ sensor=false"&gt;</code></pre>
                 <pre><code>&lt;img src="
 http://maps.googleapis.com/maps/api/streetview?
 size=300x250&
-location=-33.86627,151.195827&
-fov=20&
-heading=350&
+location=51.5030943,-0.1778232&
+fov=90&
+heading=370&
 pitch=-20&
 sensor=false"&gt;</code></pre>
 
                 <p>Read more: <a href="http://code.google.com/apis/maps/documentation/staticmaps/" target=
                 "_blank">Google Static Maps API</a> | <a href=
-                "http://code.google.com/apis/maps/documentation/streetview/index.html" target="_blank">Google Street
+                "https://developers.google.com/maps/documentation/streetview/" target="_blank">Google Street
                 View Image API</a></p>
             </section>
 
@@ -210,7 +228,7 @@ chtt=Percentage%20of%20Google%20Chart%20Which%20Resembles%20Pac-man"&gt;</code><
                 <h3>YouTube Embed:</h3>
 
                 <pre><code>&lt;iframe width="420" height="315"
- src="http://www.youtube.com/embed/epUk3T2Kfno?rel=0&autoplay=1"
+ src="https://www.youtube.com/embed/epUk3T2Kfno?rel=0&autoplay=1"
  frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;</code></pre>
 
                 <p><a href="https://developers.google.com/youtube/player_parameters#autohide" target="_blank">Youtube
@@ -373,7 +391,7 @@ xhr.send();</code></pre><marquee>Error: Same origin policy!</marquee>
 
                 <h3>Your page:</h3>
 
-                <pre><code>&lt;script src="https://gdi-jsonp.herokuapp.com/api.php?callback=onLoadData"&gt;
+                <pre><code>&lt;script src="https://gdi-jsonp.herokuapp.com/app.php?callback=onLoadData"&gt;
 &lt;/script&gt;
 &lt;script&gt;
 function onLoadData(json) {
